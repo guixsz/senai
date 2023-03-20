@@ -24,7 +24,7 @@ public class Fornecedor extends Pessoa{
                "\nLogadouro: " + super.endereco.logadouro +
                "\nCEP: " + super.endereco.cidade +
                "\nComplemento: " + super.endereco.complemento +
-               "\nNúmero: " + super.endereco.numero ;
+               "\nNumero: " + super.endereco.numero ;
     }
 
     public String getCnpj() {

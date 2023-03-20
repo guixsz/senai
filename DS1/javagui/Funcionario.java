@@ -1,21 +1,25 @@
 package javagui;
 
-public class Funcionario extends Pessoa{
+public abstract class Funcionario extends Pessoa{
     protected String cpf;
     protected String rg;
     protected String matricula;
     protected double salario;
+    protected Setor setor;
 
     public Funcionario() {
     }
 
-    public Funcionario(String cpf, String rg, String matricula, double salario, int id, String nome, int idade, Genero genero, Endereco endereco) {
+    public Funcionario(String cpf, String rg, String matricula, double salario, Setor setor, int id, String nome, int idade, Genero genero, Endereco endereco) {
         super(id, nome, idade, genero, endereco);
         this.cpf = cpf;
         this.rg = rg;
         this.matricula = matricula;
         this.salario = salario;
+        this.setor = setor;
     }
+
+    
 
     @Override
     public String toString() {
@@ -32,8 +36,6 @@ public class Funcionario extends Pessoa{
                "\nComplemento: " + super.endereco.complemento +
                "\nNúmero: " + super.endereco.numero ;
     }
-    
-    
 
     public String getCpf() {
         return cpf;
@@ -66,6 +68,18 @@ public class Funcionario extends Pessoa{
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+    public Setor getSetor() {
+        return setor;
+    }
+
+    public void setSetor(Setor setor) {
+        this.setor = setor;
+    }
+    
+    
+
+   
     
     
 }
