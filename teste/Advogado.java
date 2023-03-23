@@ -33,7 +33,7 @@ public class Advogado extends Funcionario{
                 "\nCidade: " + super.endereco.cidade +
                 "\nUF: " + super.endereco.uf.getSigla() +
                 "\nOAB: " + this.oab +
-                "\Salario: " + super.salario +
+                "\nSalario: " + super.salario +
                 "\nSetor: " + super.setor +
                 "\nMatricula" + super.matricula +
                 "\nData de nascimento: " + super.getDataNascimento();
